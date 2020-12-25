@@ -27,7 +27,7 @@ while (loop):
             table = first_page.extract_table()
             for row in table[0:]:
                 outcsv.writerow(row)
-            outfile.close
+            outfile.close()
         
         sg.popup('CONVERSION COMPLETED, Exit program')
         loop = True
